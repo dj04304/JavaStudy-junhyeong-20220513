@@ -16,8 +16,10 @@ public class If05 {
 		System.out.print("y축 좌표: ");
 		y = scanner.nextInt();
 		
-		if((x < 1000 || y < 1000 || x > -1000 || y > -1000 || x == 0 || y == 0) 
+		if((x < 1000 || y < 1000 || x > -1000 || y > -1000 || x != 0 || y != 0) 
 				&& (x == 0 || y == 0)) {
+		}else if(x == 0 && y == 0){
+				System.out.println("원점");
 		}else if(x > 0 && y > 0) {
 				System.out.println("1사분면");
 		}else if(x < 0 && y > 0) {

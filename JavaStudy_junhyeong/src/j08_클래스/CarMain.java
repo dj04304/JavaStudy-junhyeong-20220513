@@ -21,7 +21,7 @@ package j08_클래스;
 public class CarMain {
 
 	public static void main(String[] args) {
-		Car car = new Car();
+		Car car = new Car(); //생성한 주소를 변수에 담음(주소를 매번 기억할수도 없고, 변하기 때문)
 		
 		car.company = "KIA";
 		car.model = "K7";
@@ -70,6 +70,7 @@ public class CarMain {
 		System.out.println("====================================");
 		car3.showInfoAll();
 		
+	
 	}
 
 }

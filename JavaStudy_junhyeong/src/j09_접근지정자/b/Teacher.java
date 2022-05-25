@@ -8,10 +8,10 @@ public class Teacher {
 	
 	//getter setter 생성 Alt + Shift + s
 	//getter setter 는 값을 받아와서 내보내줘야 하기 때문에 public 을 쓴다.
-	public String getName() {
+	public String getName() {//2.getName으로 return해준다.
 		return name;
 	}
-	public void setName(String name) {
+	public void setName(String name) { //1. setName으로 이름을 받아오고
 		this.name = name;
 	}
 	public String getAddress() {

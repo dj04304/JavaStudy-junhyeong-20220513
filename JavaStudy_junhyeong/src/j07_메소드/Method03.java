@@ -4,6 +4,7 @@ package j07_메소드;
 
 public class Method03 {
 
+	
 	public static void test1() {
 		System.out.println("매개변수가 없는 test1 호출");
 	}

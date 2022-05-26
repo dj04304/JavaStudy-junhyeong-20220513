@@ -8,6 +8,7 @@ public class UserService {
 
 	private Scanner scanner; //Scanner 선언(UserService가 생성될 때 입력받을 수 있게끔 선언만함)
 		//생성을 하지 않는 이유는 사용하지 않을 때도 메모리를 잡아먹고 있기 때문이다.
+	
 	public UserService() { 
 		scanner = new Scanner(System.in); //생성과 동시에 입력
 	}
@@ -34,9 +35,9 @@ public class UserService {
 		System.out.print("비밀번호: ");
 		password = scanner.nextLine();
 		
-		
-		
+
 		User user = new User(usercode, email, name, username, password); //생성과 동시에 입력을 받아서 return user
+		
 		
 		return user; //User 클래스로 만든 객체 user값을 return해준다.
 		

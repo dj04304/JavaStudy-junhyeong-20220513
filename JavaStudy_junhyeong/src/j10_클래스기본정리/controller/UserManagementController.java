@@ -18,23 +18,23 @@ public class UserManagementController {//클래스 내에 선언하는 모든것
 		int indexResult = findUserEmptyInUsers(); //findUserEmptyInUsers 메소드 호출
 		if(indexResult != -1) { // indexResult의 값이 -1 이아니라면 사용자가 추가됨
 			
-			users[indexResult] = userService.insertUser(); //userService 안의 inserUser 호출
+			users[indexResult] = userService.insertUser(); //users의 빈 공간에 userService 안의 inserUser 호출
 			
 			System.out.println("[ 새로 추가된 사용자 ]"); 
-			System.out.println(users[indexResult].toString()); //user.toString 출력
-		}else { // indexResult 의 값이 -1이라면 사용자를 추가할 수 없
+			System.out.println(users[indexResult].toString()); //index내의 toString 을 출력한다.
+		}else { // indexResult 의 값이 -1이라면 사용자를 추가할 수 없다.
 			System.out.println("더 이상 사용자를 추가할 수 없습니다.");
 		}
 	
 	}
 
-	private int findUserEmptyInUsers() {
+	private int findUserEmptyInUsers() { //클래스가 생성될 때 비어있는 곳이 있는지를 체크하는 역할
 		for(int i = 0; i < users.length; i++) { //users 배열 크기만큼 반복
 			if(users[i] == null) { //users의 배열에 null이 들어있다면(비어있으면 null이 들어있음)
 				return i;
 			}
 		}
-		return -1; //빈 공간이 없다.
+		return -1; //빈 공간이 없다. (for문이 끝나고 return된다.)
 	}
 	
 	public void updateUser() {

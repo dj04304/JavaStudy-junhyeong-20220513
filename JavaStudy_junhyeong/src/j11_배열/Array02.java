@@ -27,13 +27,13 @@ public class Array02 {
 				//8의 배수의 개수가 나옴
 			}
 		}
-			int[] numArray = new int[size]; //배열 안에 8의 배수의 개수만큼 만들어줌
+			int[] numArray = new int[size]; //배열 안에 size(8의 배수의 개수)만큼 생성해줌
 				//값은 0이다.
 		
 		//배열안의 숫자(8의 배수)를 구하는 반복문
 		for(int i = 0, j = 0; i < 100; i++) {
 			if(i != 0 && i % 8 == 0) { //0이아닌 8의 배수일때
-				numArray[j] = i; // 배열에 8을 넣어라
+				numArray[j] = i; // size만큼 생성된 배열에 8의 배수를 넣어라
 				System.out.println(numArray[j]); //배열 안의 숫자를 출력
 				j++;//j를 증가시켜줘야함(그 다음 배열에 넣어야 되기 때문에)
 			}

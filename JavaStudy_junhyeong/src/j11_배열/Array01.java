@@ -9,7 +9,7 @@ package j11_배열;
  * 자료형이기 때문에 int[] 자리에 일반자료형, 참조자료형 모두 올 수 있다.
  *
  *자료형 3가지 : 일반 자료형(int num)
- *			참조 자료형 -> calss // Array
+ *			참조 자료형 -> class // Array
  */
 
 public class Array01 {

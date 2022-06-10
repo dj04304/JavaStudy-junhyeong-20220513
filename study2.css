@@ -1,0 +1,32 @@
+*{
+    font-size: 30px;
+}
+
+span {
+    color: red;
+}
+
+/* !important 가장 최우선으로 적용시켜줌 */
+/* !important > 인라인 스타일 > id 스타일 > 클래스 스타일 > 타입 스타일 순으로 적용됨. */
+
+#sbject {
+    color: blue !important;
+}
+
+.content {
+    color: pink ;
+}
+
+/* 케스캐이딩 때문에 brown이 적용 */
+.content {
+    color: brown;
+}
+
+.info-ip{
+    color: red;
+}
+
+.font-8{
+    font-size: 8px;
+    color: brown;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>study</title>
+    <!-- 캐스캐이딩: 위에서 아래로 흐른다(계단식으로 적용된다)는 뜻이며 선택자의 여러스타일이 적용될 때, 우선순위에 따라 적용되는 것을 말한다. -->
+    <!-- 그래서 대부분 외부 스타일 시트를 사용한다. -->
+    <link rel="stylesheet" href="css/study.css">
+    <!-- 내부 스타일 시트 -->
+    <style>
+        button {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- 인라인 스타일-->
+    <button style="background-color: red;">버튼</button>
+    <!-- 내부 스타일 시트-->
+    <button>버튼</button>
+    <!-- 외부 스타일 시트 -->
+    <input type="text">
+</body>
+</html>

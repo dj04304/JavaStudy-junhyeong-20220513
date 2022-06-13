@@ -1,0 +1,35 @@
+/* box-sizing: border-box 를 통해, 콘텐츠영역의 크기가 아닌
+boder내의 영역까지 계산해준다.
+*/
+*{
+    box-sizing: border-box;
+}
+
+.box1 {
+    width: 100px;
+    height: 100px;
+}
+
+.ip-box {
+    width: 100px;
+}
+
+label {
+    display: inline-block;
+    border: 1px solid red;
+    /* border-left: 1px solid red; */
+    border-radius: 5px;
+    padding: 5px 2px 10px 4px;
+    /* padding-left: 1px; */
+    width: 300px;
+}
+
+/* margin, border, padding, content 순으로 작성 */
+.box3 {
+    margin-top: 10px;
+    border-radius: 50%;
+    border: 1px solid red;
+    padding: 40px;
+    width: 200px;
+    height: 200px;
+}
